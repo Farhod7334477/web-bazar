@@ -8,13 +8,13 @@ import PaymentForm from './PaymentForm';
 const steps = ['shipping address', 'Payment detail'];
 
 const Checkout = () => {
-  const [activeStep, setActiveStep] = useState(0);
+  const [activeStep] = useState(0);
 
   const Confirmation = () => {
     <div>Confirmation</div>;
   };
 
-  const Form = () => (activeStep == 0 ? <AddresForm /> : <PaymentForm />);
+  const Form = () => (activeStep === 0 ? <AddresForm /> : <PaymentForm />);
 
   return (
     <>
@@ -42,7 +42,7 @@ const Checkout = () => {
               ))}
             </Stepper>
 
-            {activeStep == steps.length ? <Confirmation /> : <Form />}
+            {activeStep === steps.length ? <Confirmation /> : <Form />}
           </Grid>
         </Grid>
       </Container>

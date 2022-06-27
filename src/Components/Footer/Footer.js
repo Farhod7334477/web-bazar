@@ -16,7 +16,7 @@ import {
   AiFillFacebook,
   AiOutlineTwitter,
 } from 'react-icons/ai';
-import { FaTelegramPlane, FaInstagram, FaReact } from 'react-icons/fa';
+import { FaTelegramPlane, FaInstagram } from 'react-icons/fa';
 
 import './footer.css';
 
